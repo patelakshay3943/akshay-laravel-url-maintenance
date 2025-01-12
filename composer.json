@@ -10,6 +10,14 @@
             "Akshay\\Url_down\\": "src/"
         }
     },
+    "scripts": {
+        "post-update-cmd": [
+            "Akshay\\Url_down\\PackageCleanup::cleanup"
+        ],
+        "post-install-cmd": [
+            "Akshay\\Url_down\\PackageCleanup::cleanup"
+        ]
+    },
     "authors": [
         {
             "name": "Akshay Patel",
