@@ -85,7 +85,7 @@ After running this command, the selected route will be restored, and it will no 
 - Run ```php artisan route:up``` to bring ```/some-page``` back online.
 
 ## Laravel Framework Support
-This package is specifically designed to work with Laravel applications and will not function properly outside of the Laravel framework. Ensure you're using Laravel 5.5 or later for automatic package discovery.
+This package is specifically designed to work with Laravel applications and will not function properly outside of the Laravel framework. Ensure you're using ```Laravel 8.0``` or later for automatic package discovery.
 
 ### Testing
 
