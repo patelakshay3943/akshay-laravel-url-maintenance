@@ -9,6 +9,10 @@ class Helper {
 
     public static function getFileData(){
         $filePath = Config::get('urldown.routes_path');
+        if (!File::exists($filePath)) {
+            // If the file doesn't exist, create it with default empty data (or any other default data)
+            File::put($filePath, json_encode([])); // Creates an empty array in the JSON file
+        }
         $jsonData = json_decode(File::get($filePath), true);
         return $jsonData;
     }
