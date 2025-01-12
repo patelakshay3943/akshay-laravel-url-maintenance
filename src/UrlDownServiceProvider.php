@@ -24,15 +24,15 @@ class UrlDownServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $controller = $this->app->make(UrlDownController::class);
-
-        $routeName = $controller->getRouteName();
-
         if (!$this->app->runningInConsole()) {
-            if ($routeName && $controller->isRouteDown($routeName)) {
-                $downStatusCode = Config::get('urldown.error_code');
-                throw new DownErrorException( $downStatusCode,'The site is temporarily unavailable. Please try again later.');
-            }
+            app()->booted(function () {
+                $controller = $this->app->make(UrlDownController::class);
+                $routeName = $controller->getRouteName();
+                if ($routeName && $controller->isRouteDown($routeName)) {
+                    $downStatusCode = Config::get('urldown.error_code');
+                    throw new DownErrorException($downStatusCode, 'The site is temporarily unavailable. Please try again later.');
+                }
+            });
         }
 //        include __DIR__.'/routes.php';
         $this->registerCommands();
