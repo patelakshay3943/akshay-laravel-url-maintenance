@@ -1,0 +1,25 @@
+{
+    "name": "ns-34/url_down",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Akshay Patel",
+            "email": "akshaypatel.nyusoft@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Akshay\\Url_down\\UrlDownServiceProvider"
+            ]
+        }
+    },
+    "minumum-stability": "dev",
+    "require": {}
+}
