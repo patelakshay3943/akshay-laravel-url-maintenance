@@ -1,7 +1,13 @@
 {
-    "name": "akshay/url_down",
+    "name": "akshay/laravel-url-maintenance",
     "type": "library",
     "license": "MIT",
+    "description": "The akshay/laravel-url-maintenance package allows you to easily put a specific URL or route of your Laravel application under maintenance or bring it back up. It provides Artisan commands to manage site maintenance on a per-route basis.",
+    "keywords": [
+        "akshay",
+        "laravel",
+        "laravel-url-maintenance"
+    ],
     "require": {
         "php": "^7.4|^8.0"
     },

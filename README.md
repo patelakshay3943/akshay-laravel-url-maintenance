@@ -20,7 +20,7 @@ The ```url_down``` package allows you to easily put a specific URL or route of y
 To install the package, run the following Composer command:
 
 ```php
-composer require akshay/url_down
+composer require akshay/laravel-url-maintenance
 ```
 After installation, the service provider will be automatically registered if you're using Laravel 5.5 or later, thanks to package auto-discovery. For earlier versions of Laravel, you may need to add the service provider manually to your config/app.php file:
 
