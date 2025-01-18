@@ -19,10 +19,10 @@
     },
     "scripts": {
         "post-update-cmd": [
-            "Akshay\\Url_down\\PackageCleanup::cleanup"
+            "@php -r \"echo 'Post-update script executed.\n'; Akshay\\Url_down\\PackageCleanup::cleanup();\""
         ],
         "post-install-cmd": [
-            "Akshay\\Url_down\\PackageCleanup::cleanup"
+            "@php -r \"echo 'Post-install script executed.\n'; Akshay\\Url_down\\PackageCleanup::cleanup();\""
         ]
     },
     "authors": [
