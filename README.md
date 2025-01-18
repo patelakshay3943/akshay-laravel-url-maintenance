@@ -100,8 +100,7 @@ If you discover any security-related issues, please email [patelakshay3943@gmail
 ## Credits
 
 - [AKshay Patel](https://github.com/patelakshay3943)
-<!--
+  
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
--->
